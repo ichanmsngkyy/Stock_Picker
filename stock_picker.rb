@@ -1,10 +1,10 @@
-def stock_picker(array)
-  min_price = array[0]
+def stock_picker(price)
+  min_price = price[0]
   min_day = 0
   max_profit = 0
   best_days = [0,0]
 
-  array.each_with_index do |price, day|
+  price.each_with_index do |price, day|
     if price < min_price
       min_price = price
       min_day = day
